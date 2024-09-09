@@ -1,0 +1,38 @@
+name: Playwright TS
+run-name: Playwright TS Test run
+on: [push]
+permissions:
+  checks: write
+  pull-requests: write
+jobs:
+  playwirght-cucumber-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18.17
+
+      - name: Setup Node
+        run: npm ci
+
+      - name: Setup Playwright
+        run: npx playwright install chromium
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: |
+            my-report/junit-results.xml
+
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
