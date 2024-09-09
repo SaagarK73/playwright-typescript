@@ -1,0 +1,18 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="3.3185209999999996">
+<testsuite name="demo-todo-app.spec.ts" timestamp="2024-09-09T09:14:06.166Z" hostname="chromium" tests="3" failures="0" skipped="0" time="4.781" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="demo-todo-app.spec.ts" time="1.564">
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="demo-todo-app.spec.ts" time="1.505">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="demo-todo-app.spec.ts" time="1.712">
+</testcase>
+</testsuite>
+<testsuite name="demo-todo-app2.spec.ts" timestamp="2024-09-09T09:14:06.166Z" hostname="chromium" tests="3" failures="0" skipped="0" time="5.253" errors="0">
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="demo-todo-app2.spec.ts" time="1.741">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="demo-todo-app2.spec.ts" time="1.526">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="demo-todo-app2.spec.ts" time="1.986">
+</testcase>
+</testsuite>
+</testsuites>
